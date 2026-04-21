@@ -32,8 +32,8 @@ npm test
    ```
 
 3. Implement the tests by editing these files:
-   - `/home/runner/work/PW-testing/PW-testing/src/__tests__/validateLogin.test.js`
-   - `/home/runner/work/PW-testing/PW-testing/src/__tests__/LoginForm.test.jsx`
+   - `src/__tests__/validateLogin.test.js`
+   - `src/__tests__/LoginForm.test.jsx`
 
 ## Stuck?
 
