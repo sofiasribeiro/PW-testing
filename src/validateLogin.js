@@ -1,4 +1,4 @@
-const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 export default function validateLogin(email, password) {
   if (!email) {
@@ -9,7 +9,7 @@ export default function validateLogin(email, password) {
     return 'Invalid email format'
   }
 
-  if (password.length < 6) {
+  if (!password || password.length < 6) {
     return 'Password must be at least 6 characters'
   }
 
