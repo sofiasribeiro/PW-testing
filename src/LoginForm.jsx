@@ -12,32 +12,44 @@ export default function LoginForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} style={{ display: 'grid', gap: '0.75rem', maxWidth: 320 }}>
+    <form onSubmit={handleSubmit} className="d-grid gap-3" style={{ maxWidth: 420 }}>
       <div>
-        <label htmlFor="email">Email</label>
+        <label htmlFor="email" className="form-label">
+          Email
+        </label>
         <input
           id="email"
           name="email"
           type="email"
+          className="form-control"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
         />
       </div>
 
       <div>
-        <label htmlFor="password">Password</label>
+        <label htmlFor="password" className="form-label">
+          Password
+        </label>
         <input
           id="password"
           name="password"
           type="password"
+          className="form-control"
           value={password}
           onChange={(event) => setPassword(event.target.value)}
         />
       </div>
 
-      <button type="submit">Submit</button>
+      <button type="submit" className="btn btn-primary">
+        Submit
+      </button>
 
-      {error && <p role="alert">{error}</p>}
+      {error && (
+        <p role="alert" className="alert alert-danger mb-0">
+          {error}
+        </p>
+      )}
     </form>
   )
 }
