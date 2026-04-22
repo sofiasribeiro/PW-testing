@@ -1,6 +1,6 @@
-# React testing workshop starter
+# React testing lesson starter
 
-Minimal React 18 project for Project Web on unit, functional, and E2E testing.
+Minimal React 18 project for Project Web on unit and functional testing.
 
 ## Setup
 
